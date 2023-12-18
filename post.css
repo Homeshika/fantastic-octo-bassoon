@@ -1,0 +1,103 @@
+/* Story submission form styling */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width:100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.ing{
+
+    color:rgb(242, 242, 248);
+    padding: 30px;
+    
+    /* text-decoration:underline; */
+    height: 10px;
+    
+    color: rgb(16, 16, 16);
+    font-size: 15px;
+    /* text-align: center; */
+    
+    
+    background-image: linear-gradient(180deg,rgb(40, 16, 81),rgb(160, 132, 20),rgb(105, 21, 62),rgb(12, 71, 95));
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-text-fill-color:rgb(249, 242, 242);
+    animation: glitter 4s linear infinite;
+}
+ @keyframes glitter{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 200% 200%;
+    }
+}
+.ing:hover{
+    color: #111b93;
+}
+form {
+    box-shadow: 0 0 25px yellow;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(181, 181, 13);
+    margin-top: 200px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: purple;
+    font-weight: bolder;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color:purple;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(169, 16, 220);
+}
+footer {
+        
+    background-image: linear-gradient(180deg,rgb(40, 16, 81),rgb(160, 132, 20),rgb(105, 21, 62),rgb(12, 71, 95));
+    background-size: 200% 200%;
+    height: 40px;
+    padding-top : 10px;
+  
+font-size: 20px;
+    margin-top: 70px;
+    background-clip: text;
+    -webkit-text-fill-color:rgb(235, 225, 225);
+     animation: glitter 4s linear infinite; 
+}
+ @keyframes glitter{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 200% 200%;
+    }
+}

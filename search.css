@@ -1,0 +1,148 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(253, 251, 251);
+    
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header section */
+.header {
+    
+    background-image: linear-gradient(180deg,rgb(40, 16, 81),rgb(160, 132, 20),rgb(105, 21, 62),rgb(12, 71, 95));
+background-size: 200% 200%;
+height: 90px;
+color: #090909;
+    text-align: center;
+    padding: 10px;
+padding-top :  15px;
+/* margin-top: 60px; */
+background-clip: text;
+-webkit-text-fill-color:rgb(248, 241, 241);
+ animation: glitter 4s linear infinite; 
+}
+@keyframes glitter{
+0%{
+    background-position: 0% 0%;
+}
+100%{
+    background-position: 200% 200%;
+}
+}
+ .ss:hover{
+    color:rgb(48, 15, 138);
+}
+/* Styling for the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5ecec;
+}
+
+ nav ul li a:hover{
+   color: rgb(9, 222, 241);
+   
+} 
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width:100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Styling for the "Search" section */
+#search {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color:rgb(11, 7, 67);
+    
+    
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 10px rgba(186, 179, 197, 0.1);
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color:rgb(21, 5, 245);
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+form button:hover{
+    color: rgb(11, 7, 67);
+}
+
+/* Styling for the "Search Results" section */
+#search-results ul {
+    list-style: none;
+    padding: 0;
+    color: rgb(244, 240, 240);
+    
+}
+
+
+#search-results ul li {
+    margin-bottom: 20px;
+    border: 1px solid rgb(248, 243, 243);
+    padding: 10px;
+    background-color:rgb(11, 7, 67);
+}
+
+#search-results h3 {
+    font-size: 1.5em; 
+       
+}
+#search-results h2 {
+    font-size: 2.5em;  
+    color: #f9f9f9;  
+}
+
+#search-results p {
+    font-size: 1.2em;
+}
+
+
+
+
+footer{
+background-image: linear-gradient(180deg,rgb(40, 16, 81),rgb(160, 132, 20),rgb(105, 21, 62),rgb(12, 71, 95));
+background-size: 200% 200%;
+height: 40px;
+color: #fff;
+    text-align: center;
+    padding: 10px;
+padding-top :  15px;
+margin-top: 0%;
+padding-right: 1250px;
+background-clip: text;
+-webkit-text-fill-color:rgb(247, 242, 242);
+ animation: glitter 4s linear infinite; 
+}
+@keyframes glitter{
+0%{
+    background-position: 0% 0%;
+}
+100%{
+    background-position: 200% 200%;
+}
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration and Login</title>
+</head>
+<body>
+
+  <h2>Registration</h2>
+
+  <form  action="file:///C:/Users/riddh/OneDrive/Desktop/my%20story/LOGIN.html" method="post" id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="registerUser()">Register</button>
+  </form>
+
+  <h2>Login</h2>
+
+  <form id="loginForm">
+    <label for="loginEmail">Email:</label>
+    <input type="email" id="loginEmail" name="loginEmail" required>
+
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" name="loginPassword" required>
+
+    <button type="button" onclick="checkLogin()">Login</button>
+  </form>
+
+  <script>
+    var users = []; // Array to store registered users
+
+    function registerUser() {
+      // Get input values
+      var nameInput = document.getElementById('name').value;
+      var emailInput = document.getElementById('email').value;
+      var passwordInput = document.getElementById('password').value;
+
+      // Create a user object
+      var user = {
+        name: nameInput,
+        email: emailInput,
+        password: passwordInput
+      };
+
+      // Add the user to the array (in a real application, you'd save this data on a server)
+      users.push(user);
+
+      alert('Registration successful! Now you can log in.');
+    }
+
+    function checkLogin() {
+      // Get input values
+      var loginEmailInput = document.getElementById('loginEmail').value;
+      var loginPasswordInput = document.getElementById('loginPassword').value;
+
+      // Check if there's a user with the provided email
+      var user = users.find(function(u) {
+        return u.email === loginEmailInput;
+      });
+
+      // Check if the password matches
+      if (user && user.password === loginPasswordInput) {
+        alert('Login successful!');
+      } else {
+        alert('Incorrect email or password. Please try again.');
+      }
+    }
+  </script>
+
+</body>
+</html>

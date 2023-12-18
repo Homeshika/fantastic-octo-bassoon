@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="icon" href="H.jpg" type="image/H.jpg">
+
+    <link rel="stylesheet" href="ghr.css">
+</head>
+<body>
+    <header>
+        <h1>STORY LAND</h1>
+        
+    </header>
+    
+    <section id="stories">
+        <h2>My Stories</h2>
+        <div class="story">
+            <!-- <h3>Story Title 1</h3> -->
+            <p>Here is the content of the first story...</p>
+       
+            <button oneclick="like()">LIKE</button>
+            <button oneclick="comment()">COMMENT</button>
+            <button oneclick="share()">SHARE</button>
+        </div>
+
+        <div class="story">
+            <!-- <h3>Story Title 2</h3> -->
+            <p>Here is the content of the second story...</p>
+            <button oneclick="like()">LIKE</button>
+            <button oneclick="comment()">COMMENT</button>
+            <button oneclick="share()">SHARE</button>
+         
+        </div>
+       <script>
+        function like(){
+            alert('you like this!')
+        }
+        function comment(){
+            alert('you commented')
+        }
+        function share(){
+            alert('you shared this')
+        }
+        
+       </script>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Story Sharing Website</p>
+    </footer>
+</body>
+</html>

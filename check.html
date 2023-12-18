@@ -1,0 +1,94 @@
+<!DOCTYPE html>  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="H.jpg" type="image/H.jpg">
+
+    <link rel="stylesheet" href="2style.css">
+</head>
+<body>
+    <div class="box">
+    <video autoplay loop muted>
+        <source src="video5.mp4" type="video/mp4">
+    </video>    
+        <div class="class">
+  <h1>WELCOME TO STORY LAND</h1>
+  <div class="head"> 
+  <div class="form1">
+    <h2>SHARE YOUR STORY</h2>
+     <h2>"where secrets find a safe heaven--Your stories--thoughts guarded."</h2>  
+</div>
+    <div class="form2">
+        <h3><i>register this form to enter in the story land</i></h3>
+        <form  method="post" class="registrationForm">
+          
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required></input type>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" required><br>
+            
+             <button type="button" class="red"><a href="LOGIN.html" class="rrr">REGISTER</a></button><br>
+            <h6><u>IF ALREADY REGISTERED</u></h6>
+            <button type="submit">LOGIN  </button>
+          <div class="navigation">
+            <ul>
+                <li><a href="file:///C:/Users/riddh/OneDrive/Desktop/my%20story/forget.html">Forgot Password?</a></li>
+            </ul>
+          </div>
+        </form>
+        
+  <script> // Array to store registered users
+      // Get input values
+      var nameInput = document.getElementById('name').value;
+      var emailInput = document.getElementById('email').value;
+      var passwordInput = document.getElementById('password').value;
+
+      // Create a user object
+      // Add the user to the array (in a real application, you'd save this data on a serve
+    
+    document.querySelector(".red").addEventListener('click' , function(){
+      if(nameInput && emailInput && passwordInput){
+      windows.alert('Registration successful! Now you can log in.');
+    }
+      else{
+        alert('pehle details daal bsdk');
+        registrationForm.classList.remove(".rrr")
+        }
+      }
+    )
+
+    function checkLogin() {
+      // Get input values1
+      var loginEmailInput = document.getElementById('loginEmail').value;
+      var loginPasswordInput = document.getElementById('loginPassword').value;
+
+      // Check if there's a user with the provided email
+      var user = users.find(function(u) {
+        return u.email === loginEmailInput;
+      });
+
+      // Check if the password matches
+      if (user && user.password === loginPasswordInput) {
+        alert('Login successful!');
+      } else {
+        alert('Incorrect email or password. Please try again.');
+      }
+    }
+  </script>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="footer">
+    <p class="foote">&copy 2023 My Story Sharing Website|Homeshika</p>
+  </div>
+
+</body>
+</html>

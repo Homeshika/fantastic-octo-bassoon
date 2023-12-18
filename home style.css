@@ -1,0 +1,72 @@
+*{
+    margin:auto;
+    padding: 0%;
+    
+}
+.box{
+    background-image: url(title.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    border: 3px solid black;
+    
+    height: 800px;
+}
+.navigation{
+     
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+padding: 5px; 
+
+    background-image: linear-gradient(180deg,rgb(40, 16, 81),rgb(160, 132, 20),rgb(105, 21, 62),rgb(12, 71, 95));
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-text-fill-color:rgb(245, 232, 232);
+    animation: glitter 4s linear infinite;
+}
+ @keyframes glitter{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 200% 200%;
+    }
+}
+.navigation ul{
+    list-style-type: none;
+    margin: 10px;
+   padding: 10px;
+   
+}
+.navigation ul li{
+    display: inline;
+    padding: 100px;
+    
+    
+}
+.navigation ul li a{
+    text-decoration: underline;
+color: rgb(244, 237, 237);
+}
+ .navigation ul li a:hover{
+    color: rgb(13, 151, 236);
+}
+.glitter-text{
+    
+    font-size: 50px;
+    color: rgb(12, 12, 12);
+    padding-left: 10px;
+    background-image: linear-gradient(180deg,rgb(40, 16, 81),rgb(160, 132, 20),rgb(105, 21, 62),rgb(12, 71, 95));
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-text-fill-color:rgb(20, 19, 19);
+    animation: glitter 4s linear infinite;
+}
+ @keyframes glitter{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 200% 200%;
+    }
+}

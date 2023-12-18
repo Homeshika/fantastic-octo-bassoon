@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot-password</title>
+    <link rel="icon" href="H.jpg" type="image/H.jpg">
+    <link rel="stylesheet" href="forget.css">
+</head>
+<body>
+    <div class="box">
+      <video autoplay loop muted>
+        <source src="video5.mp4" type="video/mp4">
+      </video>
+        <div class="class">
+
+          
+  <h1>WELCOME TO STORY LAND</h1> 
+  <div class="head">
+  <div class="form1">
+    
+     <h2>"where secrets find a safe heaven--Your stories--thoughts guarded."</h2>  
+</div>
+  <div class="form2">
+
+  <div class="dsh">
+   <h3>FORGOT YOUR PASSWORD?</h3>
+   <h4>Dont't worry.Enter your USERNAME to reset your password</h4>
+     <form id="forgot your password" action="file:///C:/Users/riddh/OneDrive/Desktop/my%20story/home.html" method="post">
+            <label for="email">ENTER YOUR EMAIL</label>
+            <input type="email" id="email" name="email" required><br>
+             <!-- <label>NEW-PASSWORD</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">RESET PASSWORD</button><br> -->
+            <button type="button" oneclick="sendResetlink()">SEND RESET LINK</button>
+        </form>
+        <script>
+          functionsendResetlink(){
+            //get input value
+            var useremail=document.getElementById('email').value;
+            //call a server-side end point to handle password reset (not implemented here)
+            //In areal application,this should be an asynchronus operation using AJAX/fetch
+            //for simplicity ,this example shows an alert
+            alert('A password link has been sent to '+useremail);
+          }
+        </script>
+  </div>
+</div>
+</div>
+    </div>
+  
+
+  </div>
+  
+  <div class="footer">
+    <p class="foote">&copy 2023 My Story Sharing Website|Homeshika</p>
+  </div>
+</body>
+</html>

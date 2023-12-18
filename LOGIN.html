@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="H.jpg" type="image/H.jpg">
+
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="box">
+      <video autoplay loop muted>
+        <source src="video5.mp4" type="video/mp4">
+      </video>
+        <div class="class">
+
+          
+  <h1>WELCOME TO STORY LAND</h1> 
+  <div class="head">
+  <div class="form1">
+    
+     <h2>"where secrets find a safe heaven--Your stories--thoughts guarded."</h2>  
+</div>
+  <div class="form2">
+
+  <div class="dsh">
+   <h3>SHARE YOUR STORY</h3>
+     <form id="loginForm" action="file:///C:/Users/riddh/OneDrive/Desktop/my%20story/home.html" method="post">
+            <label for="loginEmail">EMAIL</label>
+            <input type="email" id="loginEmail" name="loginEmail" required><br><br>
+             <label for="loginPassword">LOGIN PASSWORD</label>
+            <input type="loginPassword" id="password" name="loginPassword" required><br>
+            <button type="button" oneclick="checkLogin()">LOGIN</button><br>
+        </form>
+        <script>
+          var users = []; // Array to store registered users
+      
+          function registerUser() {
+            // Get input values
+            var nameInput = document.getElementById('name').value;
+            var emailInput = document.getElementById('email').value;
+            var passwordInput = document.getElementById('password').value;
+      
+            // Create a user object
+            var user = {
+              name: nameInput,
+              email: emailInput,
+              password: passwordInput
+            };
+      
+            // Add the user to the array (in a real application, you'd save this data on a server)
+            users.push(user);
+      
+            alert('Registration successful! Now you can log in.');
+          }
+      
+          function checkLogin() {
+            // Get input values
+            var loginEmailInput = document.getElementById('loginEmail').value;
+            var loginPasswordInput = document.getElementById('loginPassword').value;
+      
+            // Check if there's a user with the provided email
+            var user = users.find(function(u) {
+              return u.email === loginEmailInput;
+            });
+      
+            // Check if the password matches
+            if (user && user.password === loginPasswordInput) {
+              alert('Login successful!');
+            } else {
+              alert('Incorrect email or password. Please try again.');
+            }
+          }
+        </script>
+  </div>
+</div>
+</div>
+    </div>
+  
+
+  </div>
+  
+  <div class="footer">
+    <p class="foote">&copy 2023 My Story Sharing Website|Homeshika</p>
+  </div>
+</body>
+</html>

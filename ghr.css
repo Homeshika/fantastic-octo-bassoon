@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(photo10.avif);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header section */
+header {
+    
+    background-image: linear-gradient(180deg,rgb(40, 16, 81),rgb(160, 132, 20),rgb(105, 21, 62),rgb(12, 71, 95));
+    background-size: 200% 200%;
+    height: 80px;
+    padding-top: 5px;
+    background-clip: text;
+    -webkit-text-fill-color:rgb(219, 210, 210);
+    animation: glitter 4s linear infinite;
+}
+ @keyframes glitter{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 200% 200%;
+    }
+}
+
+
+/* Styling for the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4f1447;
+}
+
+/* Styling for the "Latest Stories" section */
+#stories {
+    color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    background-image: url(photo9.jpg);
+    background-size: cover;
+    border: 30px solid white;
+    padding: 40px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(112, 55, 127, 0.1);
+}
+
+.story {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color:white;
+}
+.story button{
+    background-color: rgb(153, 17, 207);
+}
+
+
+.story h3 {
+    font-size: 1.5em;
+    color: black;
+    
+}
+
+.story p {
+    font-size: 1.2em;
+    color: black;
+    ;
+}
+
+/* Styling for the footer */
+footer {
+        
+    background-image: linear-gradient(180deg,rgb(40, 16, 81),rgb(160, 132, 20),rgb(105, 21, 62),rgb(12, 71, 95));
+    background-size: 200% 200%;
+    height: 80px;
+    padding-top :  15px;
+    background-clip: text;
+    -webkit-text-fill-color:rgb(171, 167, 167);
+     animation: glitter 4s linear infinite; 
+}
+ @keyframes glitter{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 200% 200%;
+    }
+}
+    
